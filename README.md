@@ -14,13 +14,24 @@
 ### 2. Pipeline Execution
 The pipeline consists of two main notebooks that need to be run in sequence:
 
-1. First, execute `xml_processing.ipynb` to process the XML data
-2. Then, run `rag_pipeline.ipynb` to execute the RAG (Retrieval-Augmented Generation) pipeline
+1. Place all XML regulation files in the `regulation_files/xml_files` folder
+2. Execute `xml_processing.ipynb` to process the XML data
+3. Run `rag_pipeline.ipynb` to execute the RAG (Retrieval-Augmented Generation) pipeline
 
 ## Project Structure
 - `xml_processing.ipynb`: Handles XML data preprocessing
 - `rag_pipeline.ipynb`: Implements the RAG pipeline for health compliance analysis
 - `credentials.json`: Stores API credentials (not tracked in git)
+
+## Features
+### Output Display
+The pipeline provides comprehensive output visualization including:
+- LLM-generated responses
+- Top 10 most relevant retrieved chunks from the regulations
+- Detailed metadata for each chunk:
+  - Source filename
+  - Section name
+  - Page number
 
 ## Note
 Make sure to keep your API key secure and never commit the `credentials.json` file to version control.
