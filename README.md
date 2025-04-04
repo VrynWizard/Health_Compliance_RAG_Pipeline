@@ -11,7 +11,13 @@
 }
 ```
 
-### 2. Pipeline Execution
+### 2. Install Dependencies
+Run the following command to install required packages:
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Pipeline Execution
 The pipeline consists of two main notebooks that need to be run in sequence:
 
 1. Place all XML regulation files in the `regulation_files/xml_files` folder
